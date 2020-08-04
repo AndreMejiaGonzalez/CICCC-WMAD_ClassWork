@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Multiplication and Division Calculator</h1>
+    <div id="output">
+    <input type="text" id="firstNumber">
+    <input type="text" id="secondNumber">
+    <input type="button" onclick="multiplyBy()" value="Multiply">
+    <input type="button" onclick="divideBy()" value="Divide">
+    <p id="result"></p>
+    </div>
+    <script>
+        function multiplyBy()
+        {
+            number1 = document.getElementById("firstNumber").value;
+            number2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = number1 + " multiplied by " + number2 + " is " + number1*number2
+        }
+        function divideBy()
+        {
+            number1 = document.getElementById("firstNumber").value;
+            number2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = number1 + " divided by " + number2 + " is " + number1/number2
+        }
+    </script>
+</body>
+</html>

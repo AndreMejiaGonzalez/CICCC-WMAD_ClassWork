@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Sort</title>
+</head>
+<body>
+    <h1>Sort an Array of Words</h1>
+    <input type="button" onclick="arraySort()" value="Sort">
+    <input type="button" onclick="reverseSort()" value="reverse">
+    <h2 id="output"></h2>
+    <script>
+        var fruits = ["Durian", "Figs", "Blackberries", "Elderberries", "Apricot", "Cherries", "Grapefruit"]
+        document.getElementById("output").innerHTML = fruits
+        function arraySort()
+        {
+            fruits.sort()
+            document.getElementById("output").innerHTML = fruits
+        }
+        function reverseSort()
+        {
+            fruits.reverse()
+            document.getElementById("output").innerHTML = fruits
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+//
+//  QuestionFactory.h
+//  Maths
+//
+//  Created by Andre Mejia on 2020-03-27.
+//  Copyright © 2020 Andre Mejia. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Question.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface QuestionFactory : NSObject
+
+@property NSArray *questionTpes;
+
+- (Question *) generateRandomQuestion;
+
+@end
+
+NS_ASSUME_NONNULL_END

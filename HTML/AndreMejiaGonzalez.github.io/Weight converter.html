@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weigth Converter</title>
+</head>
+<body>
+    <h1>Lbs to Kg</h1>
+    <p>
+        <label>Pounds</label>
+        <input id="inputPounds" type="number" placeholder="Pounds"
+        oninput="weightConverterk(this.value)" onchange="weightConverterk(this.value)">
+    </p>
+    <p>Grams: <span id="outputGrams"></span></p>
+<h2>Kg to Lbs</h2>
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverterp(this.value)" onchange="weightConverterp(this.value)">
+</p>
+<p>Pounds: <span id="outputPounds"></span></p>
+    <script>
+        function weightConverterk(valNum) {
+  document.getElementById("outputGrams").innerHTML = valNum / 2.2;
+        }
+  function weightConverterp(valNum) {
+  document.getElementById("outputPounds").innerHTML= valNum * 2.2;
+  }
+    </script>
+</body>
+</html>

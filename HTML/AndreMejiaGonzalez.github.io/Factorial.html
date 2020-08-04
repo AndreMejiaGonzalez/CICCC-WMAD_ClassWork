@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factorial Numbers</title>
+</head>
+<body>
+    <h1>Generate Factorial Numbers</h1>
+    <h2 id="output"></h2>
+    <input type="text" id="inputNumber">
+    <input type="button" onclick="generateFactorial()" value="Generate Factorial Number">
+    <script>
+        function generateFactorial(){
+        var number = document.getElementById("inputNumber").value;
+        if (number == 0){
+            document.getElementById("output").innerHTML = "O factorial is 1";
+        }
+        else{
+        var factorial;
+        var res = number;
+         for(factorial=1; factorial< number; factorial++){
+            res = res*factorial 
+         }
+         document.getElementById("output").innerHTML = number + " factorial is " + res;
+        }
+    }
+        
+    </script>
+</body>
+</html>
